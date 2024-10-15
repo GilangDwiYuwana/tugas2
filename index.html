@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teknologi infomasi</title>
+    <style>
+      .card-img-top{
+        width: 100;
+        height: 25vw;
+        object-fit: cover;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <!-- heading -->
+     <div class="py-1 bg-primary text-white text-end">
+      <div class="container">
+        <i class="bi bi-facebook me-2"></i>
+        <i class="bi bi-instagram me-2"></i>
+        <i class="bi bi-youtube me-2"></i>
+        <i class="bi bi-tiktok me-2"></i>
+        <i class="bi bi-search me-2"></i>
+      </div>
+     </div>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src = "https://ti.pnp.ac.id/wp-content/uploads/2022/01/logo-ti-pnp-05-1.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Study Program
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">D3 Teknik Komputer</a></li>
+                  <li><a class="dropdown-item" href="#">D3 Manajemen Informatika</a></li>
+                  <li><a class="dropdown-item" href="#">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+                  <li><a class="dropdown-item" href="#">D4 Animasi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!---->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="bg-info">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h4>penerima mahasiswa baru</h4>
+              <p>informasi tekinfo</p>
+            </div>>
+              <a href="https://penerimaan.pnp.ac.id/" class="btn btn-light">tampilakn lebih banyak</a>
+          </div>
+        </div>
+      </div>      
+      <!-- Content -->
+
+      <div class="container my-3">
+        <h4 class="text-center">Selamat Datang di Jurusan Teknologi Informasi</h4>
+        <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card">
+                  <img src="kalender.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kalender Akademik</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                  <img src="bb.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Akreditasi Prodi</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                  <img src="jadwal.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jadwal Kuliah</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                  <img src="download.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Download Area</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!--contentttt-->>
+      <div class="container my-3">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="card">
+                    <img src="a.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Spada</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">SisFo Pembelajaran Daring</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="card">
+                  <img src="b.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sita</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">SisFo tugas Akhir</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card">
+                <img src="c.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">SIAKAD</h5>
+                    <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                    <p class="card-text">SisFo akademik</p>
+                  </div>
+              </div>
+          </div>
+            <div class="col-lg-2">
+                <div class="card">
+                  <img src="d.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">MBKM</h5>
+                      <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                      <p class="card-text">SisFo MBKM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card">
+                <img src="e.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">satik</h5>
+                    <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                    <p class="card-text">SisFo saran & Kritik</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card">
+              <img src="f.png" class="card-img-top w-25 mx-auto " style ="height: 100px" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">UKT</h5>
+                  <div class = "w-25 pt-1 mx-auto d-block my-3" style = "background-color:aqua;"></div>
+                  <p class="card-text">SisFo unag kuliah Tunggal</p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+        
+       <!--content2-->
+       <div>
+        <h4 class="text-center">Berita terpadu</h4>
+        <div class = "pt-1 mx-auto d-block my-3" style = "background-color:aqua; width: 10%;"></div>
+        <p class="text-center">berita seputar teknologi informasi</p>
+       </div>
+
+      <div class="container my-3">
+        <div class="row py-3">
+            <div class="col-lg-8">
+              <img src="aa1.png" class="card-img-top w-100 mx-auto " style ="height: 100%" alt="...">
+            </div>        
+            <div class="col-lg-4">
+              <img src="aa2.png" class="card-img-top w-100 mx-auto " style ="height: 100%" alt="...">
+            </div>
+        </div>
+
+        <div class="row py-2">
+          <div class="col-lg-4">
+            <img src="aa3.png" class="card-img-top w-100 mx-auto " style ="height: 100%" alt="...">
+          </div>        
+          <div class="col-lg-4">
+            <img src="aa5.png" class="card-img-top w-100 mx-auto " style ="height: 100%" alt="...">
+          </div>
+          <div class="col-lg-4">
+            <img src="aa6.png" class="card-img-top w-100 mx-auto " style ="height: 100%" alt="...">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mb-3">
+        <div class="bg-image parallax-section" style="background-image:url('bg-web.jpg')">
+            <div class="row text-center">
+                <div class="col-3 text-light">
+                    <h1 class="display-1">928</h1>
+                    <p>Mahasiswa</p>
+                </div>
+                <div class="col-3 text-light">
+                    <h1 class="display-1">73</h1>
+                    <p>Dosen</p>
+                </div>
+                <div class="col-3 text-light">
+                    <h1 class="display-1">10</h1>
+                    <p>Lab Computer</p>
+                </div>
+                <div class="col-3 text-light">
+                    <h1 class="display-1">8</h1>
+                    <p>Program Studi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mitra Kami -->
+    <!-- Partner Logos Section -->
+    <div class="text-center my-5">
+        <h3 class="mb-3">MITRA KAMI</h3>
+        <hr class="mb-5">
+        <!-- <div class="partner-logos d-flex justify-content-center align-items-center flex-wrap"> -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/Microsoft-Academy-Logo1-pjbyvmmyq0ub88xwe3vopmbzitv6go1pz8hvsnmsy8.png"
+                        alt="Microsoft">
+                </div>
+                <div class="col-3">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/Cisco-Academi-pjbywcygccjd3cbgkqo5we0zcvjqf8yghs33gt6u9g.jpg"
+                        alt="Cisco">
+                </div>
+                <div class="col-3">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/logo_aws-educate_light.8a107f05996892b795db30104d5fb968d4619246-pjbyweu4s7jo8z1ruaq3v44bjfqf3cj12lsnfhno28.png"
+                        alt="AWS Educate">
+                </div>
+                <div class="col-3">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/mikrotik-academy-logo-pjbywgpsuwxd6bvbo0sjvx9nmesxd5q1bb5gnvkkbq.jpg"
+                        alt="MikroTik">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-3">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/oracle-academy-logo1-800x343-2-pjbzq0r3p6g5ouea2nmam0m11eu218hyjooqpojsme.png"
+                        alt="Oracle">
+                </div>
+                <div class="col-3">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/redhat-academy-qkc459ruheb7dbxc5wwfksnw7woe9y9h4hxawuwso6.png"
+                        alt="Red Hat">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PENGUMUMAN -->
+
+    <!-- Pengumuman dan prestasi -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="0.65"
+            d="M0,128L18.5,112C36.9,96,74,64,111,74.7C147.7,85,185,139,222,149.3C258.5,160,295,128,332,117.3C369.2,107,406,117,443,133.3C480,149,517,171,554,170.7C590.8,171,628,149,665,160C701.5,171,738,213,775,202.7C812.3,192,849,128,886,133.3C923.1,139,960,213,997,213.3C1033.8,213,1071,139,1108,106.7C1144.6,75,1182,85,1218,106.7C1255.4,128,1292,160,1329,149.3C1366.2,139,1403,85,1422,58.7L1440,32L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+        </path>
+        <path fill="#0099ff" fill-opacity="0.80"
+            d="M0,288L18.5,261.3C36.9,235,74,181,111,149.3C147.7,117,185,107,222,96C258.5,85,295,75,332,58.7C369.2,43,406,21,443,32C480,43,517,85,554,96C590.8,107,628,85,665,74.7C701.5,64,738,64,775,80C812.3,96,849,128,886,133.3C923.1,139,960,117,997,112C1033.8,107,1071,117,1108,117.3C1144.6,117,1182,107,1218,128C1255.4,149,1292,203,1329,213.3C1366.2,224,1403,192,1422,176L1440,160L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+        </path>
+        <path fill="#0099ff" fill-opacity="0.64"
+            d="M0,96L18.5,106.7C36.9,117,74,139,111,122.7C147.7,107,185,53,222,64C258.5,75,295,149,332,160C369.2,171,406,117,443,128C480,139,517,213,554,250.7C590.8,288,628,288,665,288C701.5,288,738,288,775,282.7C812.3,277,849,267,886,224C923.1,181,960,107,997,74.7C1033.8,43,1071,53,1108,90.7C1144.6,128,1182,192,1218,229.3C1255.4,267,1292,277,1329,272C1366.2,267,1403,245,1422,234.7L1440,224L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+        </path>
+    </svg>
+    <div style="background-color: #0099ff;">
+        <div class="container">
+            <div class="row">
+                <!-- Pengumuman -->
+                <div class="col-lg-6 mb-3">
+                    <div class="card text-bg-dark h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Pengumuman</h5>
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <img class="img-fluid fixed-size-img"
+                                        src="https://ti.pnp.ac.id/wp-content/uploads/2023/10/pekan-it-scaled.jpg"
+                                        alt="">
+                                    <h5 class="news-title mt-2">Pekan IT Politeknik Negeri Padang 2023 :
+                                        <br>
+                                        <p>The Digital Revolution</p>
+                                    </h5>
+                                    <p class="news-meta">October 16,23</p>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <img class="img-fluid fixed-size-img"
+                                        src="https://ti.pnp.ac.id/wp-content/uploads/2022/06/Kuliah-Umum.jpeg"
+                                        alt="">
+                                    <h5 class="news-title mt-2">Seminar Mental Health dan Communication Skill Bagi
+                                        Civitas Akademika</h5>
+                                    <p class="news-meta">Yori Adi Atma &mdash; August 21, 2024</p>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-info">Lainnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prestasi Mahasiswa -->
+                <div class="col-lg-6 mb-3">
+                    <div class="card text-bg-dark h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Prestasi Mahasiswa</h5>
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <img class="img-fluid fixed-size-img"
+                                        src="https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg" alt="">
+                                    <h5 class="news-title mt-2">Seminar Mental Health dan Communication Skill Bagi
+                                        Civitas Akademika</h5>
+                                    <p class="news-meta">Yori Adi Atma &mdash; August 21, 2024</p>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <img class="img-fluid fixed-size-img"
+                                        src="https://ti.pnp.ac.id/wp-content/uploads/2024/07/hack4.png" alt="">
+                                    <h5 class="news-title mt-2">Seminar Mental Health dan Communication Skill Bagi
+                                        Civitas Akademika</h5>
+                                    <p class="news-meta">Yori Adi Atma &mdash; August 21, 2024</p>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-info">Lainnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="text-center bg-dark text-white py-2 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="img-fluid" src="https://ti.pnp.ac.id/wp-content/uploads/2022/01/logoti3-white.png"
+                        alt="">
+                    <p class="text-start">Kampus Politeknik Negeri Padang
+                        Limau Manis Padang
+                        Kode Pos : 25176
+                        Phone : 0751-72590</p>
+                </div>
+                <div class="col-lg-3">
+                    <p>OUR ACADEMY</p>
+                    <ul class="text-start">
+                        <li>MikroTik Academy</li>
+                        <li>RedHat Academy</li>
+                        <li>Oracle Academy</li>
+                        <li>AWS Educate </li>
+                        <li>Networking Academy</li>
+                        <li>Microsoft IT Academy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p>USEFULL LINKS</p>
+                    <ul class="text-start ">
+                        <a href="" class="text-decoration-none text-light">
+                            <li>Academy</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-light">
+                            <li>Accreditation</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-light">
+                            <li>Facility</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-light">
+                            <li>Journal</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-light">
+                            <li>Suggestion and Feedback</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p>Follow Us</p>
+                    <a href="" class="link-sosmed"><i class="bi bi-facebook me-2"></i></a>
+                    <a href="" class="link-sosmed"><i class="bi bi-youtube me-2"></i></a>
+                    <a href="" class="link-sosmed"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <a href="tel:+6275172590" class="btn btn-dark telephone-btn">
+                <i class="bi bi-telephone-fill"></i> Telepon
+            </a>
+            <div>
+                <br>
+                <p class="text-start">Jurusan Teknologi Informasi</p>
+                <div class="text-center bg-dark text-white py-2 ">
+                    <p>Copyright &copy; 2024 Developed by Gilang Dwi Yuwana</p>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
