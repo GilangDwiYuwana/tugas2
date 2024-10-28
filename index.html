@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Teknologi infomasi</title>
     <style>
+      .bg-image {
+        background-color: #000; /* Warna fallback, ganti sesuai keinginan */
+        height: 100px; /* Atur tinggi yang sesuai */
+        background-size: cover;
+        background-position: center;
+      }
       .card-img-top{
         width: 100;
         height: 25vw;
@@ -36,14 +42,22 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link active" aria-current="page" href="#">Beranda <br> <i>Home</i></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Study Program
+                  Profile <br> <i>profile </i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="sejarah.html">sejarah</a></li>
+                  <li><a class="dropdown-item" href="visi-misi.html">visi-misi</a></li>
+                  <li><a class="dropdown-item" href="tujuan-strategis.html">tujuan-strategis</a></li>
+                  <li><a class="dropdown-item" href="fasilitas.html">fasilitas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Study Program <br> <i>All of us</i>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">D3 Teknik Komputer</a></li>
@@ -53,10 +67,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Akademik <br> <i>academic</i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Penelitian <br> <i>kerjasama<i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hubungi <br> <i>Contack Us<i></a>
               </li>
             </ul>
           </div>
@@ -92,7 +109,7 @@
             <div>
               <h4>penerima mahasiswa baru</h4>
               <p>informasi tekinfo</p>
-            </div>>
+            </div>
               <a href="https://penerimaan.pnp.ac.id/" class="btn btn-light">tampilakn lebih banyak</a>
           </div>
         </div>
